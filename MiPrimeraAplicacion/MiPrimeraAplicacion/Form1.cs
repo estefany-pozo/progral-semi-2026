@@ -16,5 +16,10 @@ namespace MiPrimeraAplicacion
         {
             InitializeComponent();
         }
+
+        private void btnSaludo_Click(object sender, EventArgs e) { 
+        
+            MessageBox.Show("Hola Chicos De Progra I, Bienvenidos");
+        }
     }
 }

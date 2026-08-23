@@ -29,13 +29,35 @@ namespace MiPrimeraAplicacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnSaludo = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnSaludo
+            // 
+            this.btnSaludo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaludo.Location = new System.Drawing.Point(234, 140);
+            this.btnSaludo.Name = "btnSaludo";
+            this.btnSaludo.Size = new System.Drawing.Size(245, 57);
+            this.btnSaludo.TabIndex = 0;
+            this.btnSaludo.Text = "Saludo";
+            this.btnSaludo.UseVisualStyleBackColor = true;
+            this.btnSaludo.Click += new System.EventHandler(this.btnSaludo_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnSaludo);
+            this.Name = "Form1";
+            this.Text = "Mi Primera Aplicacion";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSaludo;
     }
 }
 
