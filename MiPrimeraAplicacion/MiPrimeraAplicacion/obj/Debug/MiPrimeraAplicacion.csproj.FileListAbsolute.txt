@@ -8,3 +8,13 @@ C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\MiPrimeraAplicacion\MiPrimeraA
 C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.CoreCompileInputs.cache
 C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.exe
 C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.pdb
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.AssemblyReference.cache
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.Form1.resources
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.Properties.Resources.resources
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.GenerateResource.cache
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.exe
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.pdb
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.exe.config
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.exe
+C:\Users\fany5\OneDrive\Desktop\Nueva carpeta (2)\semi2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.pdb

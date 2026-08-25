@@ -29,35 +29,97 @@ namespace MiPrimeraAplicacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSaludo = new System.Windows.Forms.Button();
+            this.lblNum1 = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.lblNum2 = new System.Windows.Forms.Label();
+            this.lblRespuesta = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnSaludo
+            // lblNum1
             // 
-            this.btnSaludo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaludo.Location = new System.Drawing.Point(234, 140);
-            this.btnSaludo.Name = "btnSaludo";
-            this.btnSaludo.Size = new System.Drawing.Size(245, 57);
-            this.btnSaludo.TabIndex = 0;
-            this.btnSaludo.Text = "Saludo";
-            this.btnSaludo.UseVisualStyleBackColor = true;
-            this.btnSaludo.Click += new System.EventHandler(this.btnSaludo_Click);
+            this.lblNum1.AutoSize = true;
+            this.lblNum1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNum1.Location = new System.Drawing.Point(63, 71);
+            this.lblNum1.Name = "lblNum1";
+            this.lblNum1.Size = new System.Drawing.Size(59, 21);
+            this.lblNum1.TabIndex = 0;
+            this.lblNum1.Text = "Num1:";
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(128, 230);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(138, 54);
+            this.btnCalcular.TabIndex = 1;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtNum1
+            // 
+            this.txtNum1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum1.Location = new System.Drawing.Point(128, 68);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(138, 29);
+            this.txtNum1.TabIndex = 2;
+            // 
+            // txtNum2
+            // 
+            this.txtNum2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNum2.Location = new System.Drawing.Point(128, 112);
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(138, 29);
+            this.txtNum2.TabIndex = 4;
+            // 
+            // lblNum2
+            // 
+            this.lblNum2.AutoSize = true;
+            this.lblNum2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNum2.Location = new System.Drawing.Point(63, 106);
+            this.lblNum2.Name = "lblNum2";
+            this.lblNum2.Size = new System.Drawing.Size(59, 21);
+            this.lblNum2.TabIndex = 3;
+            this.lblNum2.Text = "Num2:";
+            // 
+            // lblRespuesta
+            // 
+            this.lblRespuesta.AutoSize = true;
+            this.lblRespuesta.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuesta.Location = new System.Drawing.Point(52, 161);
+            this.lblRespuesta.Name = "lblRespuesta";
+            this.lblRespuesta.Size = new System.Drawing.Size(99, 21);
+            this.lblRespuesta.TabIndex = 5;
+            this.lblRespuesta.Text = "Respuesta:?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSaludo);
+            this.ClientSize = new System.Drawing.Size(365, 323);
+            this.Controls.Add(this.lblRespuesta);
+            this.Controls.Add(this.txtNum2);
+            this.Controls.Add(this.lblNum2);
+            this.Controls.Add(this.txtNum1);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.lblNum1);
             this.Name = "Form1";
-            this.Text = "Mi Primera Aplicacion";
+            this.Text = "Calculadora Basica";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnSaludo;
+        private System.Windows.Forms.Label lblNum1;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.TextBox txtNum2;
+        private System.Windows.Forms.Label lblNum2;
+        private System.Windows.Forms.Label lblRespuesta;
     }
 }
 
