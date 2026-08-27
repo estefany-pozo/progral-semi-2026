@@ -29,13 +29,12 @@ namespace MiPrimeraAplicacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNum1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.lblNum2 = new System.Windows.Forms.Label();
             this.lblRespuesta = new System.Windows.Forms.Label();
-            this.grbOpciones = new System.Windows.Forms.GroupBox();
+            this.grpOpciones = new System.Windows.Forms.GroupBox();
             this.rdbFactorial = new System.Windows.Forms.RadioButton();
             this.rdbRaiz = new System.Windows.Forms.RadioButton();
             this.rdbExponente = new System.Windows.Forms.RadioButton();
@@ -43,18 +42,11 @@ namespace MiPrimeraAplicacion
             this.rdbMultiplicacion = new System.Windows.Forms.RadioButton();
             this.rdbResta = new System.Windows.Forms.RadioButton();
             this.rdbSuma = new System.Windows.Forms.RadioButton();
-            this.grbOpciones.SuspendLayout();
+            this.cboOpciones = new System.Windows.Forms.ComboBox();
+            this.lblNum1 = new System.Windows.Forms.Label();
+            this.lblOpciones = new System.Windows.Forms.Label();
+            this.grpOpciones.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblNum1
-            // 
-            this.lblNum1.AutoSize = true;
-            this.lblNum1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum1.Location = new System.Drawing.Point(63, 71);
-            this.lblNum1.Name = "lblNum1";
-            this.lblNum1.Size = new System.Drawing.Size(59, 21);
-            this.lblNum1.TabIndex = 0;
-            this.lblNum1.Text = "Num1:";
             // 
             // btnCalcular
             // 
@@ -103,21 +95,21 @@ namespace MiPrimeraAplicacion
             this.lblRespuesta.TabIndex = 5;
             this.lblRespuesta.Text = "Respuesta:?";
             // 
-            // grbOpciones
+            // grpOpciones
             // 
-            this.grbOpciones.Controls.Add(this.rdbFactorial);
-            this.grbOpciones.Controls.Add(this.rdbRaiz);
-            this.grbOpciones.Controls.Add(this.rdbExponente);
-            this.grbOpciones.Controls.Add(this.rdbDivision);
-            this.grbOpciones.Controls.Add(this.rdbMultiplicacion);
-            this.grbOpciones.Controls.Add(this.rdbResta);
-            this.grbOpciones.Controls.Add(this.rdbSuma);
-            this.grbOpciones.Location = new System.Drawing.Point(298, 68);
-            this.grbOpciones.Name = "grbOpciones";
-            this.grbOpciones.Size = new System.Drawing.Size(135, 216);
-            this.grbOpciones.TabIndex = 6;
-            this.grbOpciones.TabStop = false;
-            this.grbOpciones.Text = "Opciones";
+            this.grpOpciones.Controls.Add(this.rdbFactorial);
+            this.grpOpciones.Controls.Add(this.rdbRaiz);
+            this.grpOpciones.Controls.Add(this.rdbExponente);
+            this.grpOpciones.Controls.Add(this.rdbDivision);
+            this.grpOpciones.Controls.Add(this.rdbMultiplicacion);
+            this.grpOpciones.Controls.Add(this.rdbResta);
+            this.grpOpciones.Controls.Add(this.rdbSuma);
+            this.grpOpciones.Location = new System.Drawing.Point(298, 68);
+            this.grpOpciones.Name = "grpOpciones";
+            this.grpOpciones.Size = new System.Drawing.Size(135, 216);
+            this.grpOpciones.TabIndex = 6;
+            this.grpOpciones.TabStop = false;
+            this.grpOpciones.Text = "Opciones";
             // 
             // rdbFactorial
             // 
@@ -191,12 +183,52 @@ namespace MiPrimeraAplicacion
             this.rdbSuma.Text = "Suma";
             this.rdbSuma.UseVisualStyleBackColor = true;
             // 
+            // cboOpciones
+            // 
+            this.cboOpciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboOpciones.FormattingEnabled = true;
+            this.cboOpciones.Items.AddRange(new object[] {
+            "Suma",
+            "Resta",
+            "Multiplicacion",
+            "Division",
+            "Exponente",
+            "Raiz",
+            "Factorial"});
+            this.cboOpciones.Location = new System.Drawing.Point(155, 25);
+            this.cboOpciones.Name = "cboOpciones";
+            this.cboOpciones.Size = new System.Drawing.Size(288, 21);
+            this.cboOpciones.TabIndex = 7;
+            this.cboOpciones.SelectedIndexChanged += new System.EventHandler(this.cboOpciones_SelectedIndexChanged);
+            // 
+            // lblNum1
+            // 
+            this.lblNum1.AutoSize = true;
+            this.lblNum1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNum1.Location = new System.Drawing.Point(63, 71);
+            this.lblNum1.Name = "lblNum1";
+            this.lblNum1.Size = new System.Drawing.Size(59, 21);
+            this.lblNum1.TabIndex = 0;
+            this.lblNum1.Text = "Num1:";
+            // 
+            // lblOpciones
+            // 
+            this.lblOpciones.AutoSize = true;
+            this.lblOpciones.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOpciones.Location = new System.Drawing.Point(63, 23);
+            this.lblOpciones.Name = "lblOpciones";
+            this.lblOpciones.Size = new System.Drawing.Size(86, 21);
+            this.lblOpciones.TabIndex = 8;
+            this.lblOpciones.Text = "Opciones:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 323);
-            this.Controls.Add(this.grbOpciones);
+            this.Controls.Add(this.lblOpciones);
+            this.Controls.Add(this.cboOpciones);
+            this.Controls.Add(this.grpOpciones);
             this.Controls.Add(this.lblRespuesta);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.lblNum2);
@@ -205,22 +237,20 @@ namespace MiPrimeraAplicacion
             this.Controls.Add(this.lblNum1);
             this.Name = "Form1";
             this.Text = "Calculadora Basica";
-            this.grbOpciones.ResumeLayout(false);
-            this.grbOpciones.PerformLayout();
+            this.grpOpciones.ResumeLayout(false);
+            this.grpOpciones.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNum1;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.Label lblNum2;
         private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.GroupBox grbOpciones;
+        private System.Windows.Forms.GroupBox grpOpciones;
         private System.Windows.Forms.RadioButton rdbExponente;
         private System.Windows.Forms.RadioButton rdbDivision;
         private System.Windows.Forms.RadioButton rdbMultiplicacion;
@@ -228,6 +258,9 @@ namespace MiPrimeraAplicacion
         private System.Windows.Forms.RadioButton rdbSuma;
         private System.Windows.Forms.RadioButton rdbFactorial;
         private System.Windows.Forms.RadioButton rdbRaiz;
+        private System.Windows.Forms.ComboBox cboOpciones;
+        private System.Windows.Forms.Label lblNum1;
+        private System.Windows.Forms.Label lblOpciones;
     }
 }
 
