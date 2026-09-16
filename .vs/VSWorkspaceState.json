@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MiPrimeraAplicacion",
+    "\\MiPrimeraAplicacion\\MiPrimeraAplicacion"
   ],
-  "SelectedNode": "\\C:\\Users\\fany5\\Source\\Repos\\progral-semi-2026",
+  "SelectedNode": "\\MiPrimeraAplicacion\\MiPrimeraAplicacion\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,14 @@
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\db_ academica.mdf
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\db_ academica_log.ldf
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\db_base de datos.mdf
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\db_base de datos_log.ldf
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.exe.config
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.exe
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\bin\Debug\MiPrimeraAplicacion.pdb
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.AssemblyReference.cache
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.Form1.resources
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.Properties.Resources.resources
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.GenerateResource.cache
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.exe
+C:\Users\fany5\Source\Repos\progral-semi-2026\MiPrimeraAplicacion\MiPrimeraAplicacion\obj\Debug\MiPrimeraAplicacion.pdb
