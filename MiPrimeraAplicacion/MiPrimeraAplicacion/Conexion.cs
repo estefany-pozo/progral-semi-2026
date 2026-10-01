@@ -1,44 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Data; //Esta libreria es para usar bases de datos
-using System.Data.SqlClient; //Esta libreria permite usar SQLServer
-
+﻿using System.Data;
+using System.Data.SqlClient;
 namespace MiPrimeraAplicacion
 {
-    internal class Conexion
+    class Conexion
     {
-        //Definir los miembros, atributos y metodos de la clase
-        public SqlConnection objConexion = new SqlConnection(); //Conectarme a la BD
-        public SqlCommand objComando = new SqlCommand(); //Ejecutar consultas (Insert, update, delete, select) SQL en la BD
-        public SqlDataAdapter objDataAdapter = new SqlDataAdapter();//un puente entre la BD y la aplicacion.
-        DataSet objDs = new DataSet(); //Representa una copia en memoria de la arquitectura de la BD
-
-        public Conexion()
-        {//Constructor e inicializador de los miembros de la clase
-            String cadenaCoenxion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_base de datos.mdf;Integrated Security=True";
-            objConexion.ConnectionString = cadenaCoenxion;
-            objConexion.Open(); //abrir la BD
-        }
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_base de datos.mdf;Integrated Security=True");
         public DataSet obtenerDatos()
         {
-            objDs.Clear();//Limpiar el datase.
-            objComando.Connection = objConexion;//Establcer la conexion para ejecutar consultas a la BD
-
-            objDataAdapter.SelectCommand = objComando;
-            objComando.CommandText = "SELECT * FROM alumnos";
-            objDataAdapter.Fill(objDs, "alumnos"); //tomamos los datos de la BD y llenamos el ds
-
-            return objDs;
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM alumnos", cn);
+            DataSet ds = new DataSet(); da.Fill(ds, "alumnos"); return ds;
         }
-
-        public void guardarDatos(DataSet ds)
+        public void insertar(string codigo, string nombre, string dir, string tel)
         {
-            SqlCommandBuilder builder = new SqlCommandBuilder(objDataAdapter);
-            objDataAdapter.Update(ds, "alumnos");
+            cn.Open(); new SqlCommand($"INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES('{codigo}','{nombre}','{dir}','{tel}')", cn).ExecuteNonQuery(); cn.Close();
+        }
+        public void actualizar(int id, string codigo, string nombre, string dir, string tel)
+        {
+            cn.Open(); new SqlCommand($"UPDATE alumnos SET codigo='{codigo}', nombre='{nombre}', direccion='{dir}', telefono='{tel}' WHERE id={id}", cn).ExecuteNonQuery(); cn.Close();
+        }
+        public void eliminar(int id)
+        {
+            cn.Open(); new SqlCommand($"DELETE FROM alumnos WHERE id={id}", cn).ExecuteNonQuery(); cn.Close();
         }
     }
 }
