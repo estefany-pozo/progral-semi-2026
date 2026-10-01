@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Data; //Esta libreria es para usar bases de datos
 using System.Data.SqlClient; //Esta libreria permite usar SQLServer
 
-namespace miPrimeaAplicacion
+namespace MiPrimeraAplicacion
 {
     internal class Conexion
     {
@@ -19,7 +19,7 @@ namespace miPrimeaAplicacion
 
         public Conexion()
         {//Constructor e inicializador de los miembros de la clase
-            String cadenaCoenxion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_academica.mdf;Integrated Security=True";
+            String cadenaCoenxion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_base de datos.mdf;Integrated Security=True";
             objConexion.ConnectionString = cadenaCoenxion;
             objConexion.Open(); //abrir la BD
         }
@@ -34,12 +34,11 @@ namespace miPrimeaAplicacion
 
             return objDs;
         }
-    }
-}
 
-namespace MiPrimeraAplicacion
-{
-    class Conexion
-    {
+        public void guardarDatos(DataSet ds)
+        {
+            SqlCommandBuilder builder = new SqlCommandBuilder(objDataAdapter);
+            objDataAdapter.Update(ds, "alumnos");
+        }
     }
 }
